@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environments
+.env
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & model artifacts (keep pointers/metadata only)
+data/raw/
+models/artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
