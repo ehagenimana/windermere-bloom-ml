@@ -14,3 +14,15 @@
 
 
 
+| 2026-02-11 | 
+
+Treat Windermere as a single lake system for MVP | 
+
+single-site vs multi-site/hierarchical | 
+
+Reduces complexity; avoids site-specific confounding in early iteration | 
+
+Keep site metadata for diagnostics; revisit if strong site heterogeneity emerges |
+
+
+
