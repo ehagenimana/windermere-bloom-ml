@@ -18,5 +18,7 @@
 
 | Site metadata | site ID, basin/arm (if exists) | Optional | Diagnostics; potential categorical feature |
 
+| Remote sensing chlorophyll | satellite-derived chlorophyll (e.g., Sentinel) | Optional (fallback) | Used only if in-situ chlorophyll coverage insufficient |
+
 
 

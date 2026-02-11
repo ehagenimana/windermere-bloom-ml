@@ -14,15 +14,19 @@
 
 
 
-| 2026-02-11 | 
+| 2026-02-11 |
 
-Treat Windermere as a single lake system for MVP | 
+Treat Windermere as a single lake system for MVP |
 
-single-site vs multi-site/hierarchical | 
+single-site vs multi-site/hierarchical |
 
-Reduces complexity; avoids site-specific confounding in early iteration | 
+Reduces complexity; avoids site-specific confounding in early iteration |
 
 Keep site metadata for diagnostics; revisit if strong site heterogeneity emerges |
+
+
+
+| 2026-02-11 | Prioritise Environment Agency in-situ data before remote sensing | in-situ vs satellite-first | In-situ data is regulator-grade and avoids atmospheric correction uncertainty | Remote sensing considered only if coverage insufficient |
 
 
 
