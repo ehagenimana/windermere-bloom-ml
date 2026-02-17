@@ -1,0 +1,24 @@
+version: "v1"
+index_col: "phenomenonTime"   # or null if already index
+target:
+  chl_threshold: 20.0
+
+columns:
+  chl: "chl"   # set to your actual column name
+  tn: "tn"     # optional; set null if unavailable
+  tp: "tp"     # optional; set null if unavailable
+
+lags:
+  chl: [1, 7]
+  tn: [7]
+  tp: [7]
+
+rolling_means:
+  chl: [7, 30]
+  tn: [30]
+  tp: [30]
+
+missingness_flags:
+  - "chl"
+  - "tn"
+  - "tp"

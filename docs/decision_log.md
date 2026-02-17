@@ -28,5 +28,25 @@ Keep site metadata for diagnostics; revisit if strong site heterogeneity emerges
 
 | 2026-02-11 | Prioritise Environment Agency in-situ data before remote sensing | in-situ vs satellite-first | In-situ data is regulator-grade and avoids atmospheric correction uncertainty | Remote sensing considered only if coverage insufficient |
 
+## Phase 2 — Feature Matrix Decisions
 
+- Target: chlorophyll > 20 µg/L
+
+- Window: 2005–2025
+
+ # Predictors V1:
+
+- TP (348)
+
+- TN (9686)
+
+- pH (61)
+
+- Lookback: 30 days
+
+# Missingness flags: enabled
+
+- Sparse DO% and Temp dropped for V1
+
+- Deterministic merge_asof backward (no leakage)
 

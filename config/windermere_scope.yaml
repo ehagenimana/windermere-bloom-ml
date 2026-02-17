@@ -1,0 +1,11 @@
+system_name: "Lake Windermere"
+treat_as_single_system: true
+point_notations:
+  - "NW-88010013"
+
+# We will fill these after sampling-point discovery
+point_notations: []
+
+date_range:
+  start: "2000-01-01"
+  end: null  # null = up to latest

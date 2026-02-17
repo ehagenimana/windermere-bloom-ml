@@ -1,80 +1,40 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "8e356926-b7d6-49c7-b9a7-69fb01c15134",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "windermere:\n",
-    "  sampling_point_notation: \"NW-88010013\"\n",
-    "\n",
-    "  determinands:\n",
-    "\n",
-    "    chlorophyll_a:\n",
-    "      notation: \"7887\"\n",
-    "      role: \"target\"\n",
-    "\n",
-    "    total_phosphorus:\n",
-    "      notation: \"348\"\n",
-    "      role: \"feature\"\n",
-    "\n",
-    "    total_nitrogen:\n",
-    "      notation: \"9686\"\n",
-    "      role: \"feature\"\n",
-    "\n",
-    "    ammoniacal_nitrogen:\n",
-    "      notation: \"9993\"\n",
-    "      role: \"feature\"\n",
-    "\n",
-    "    nitrate:\n",
-    "      notation: \"117\"\n",
-    "      role: \"feature\"\n",
-    "\n",
-    "    ph:\n",
-    "      notation: \"0061\"\n",
-    "      role: \"feature\"\n",
-    "\n",
-    "    water_temperature:\n",
-    "      notation: \"0076\"\n",
-    "      role: \"feature\"\n",
-    "\n",
-    "    transparency:\n",
-    "      notation: \"0067\"\n",
-    "      role: \"optional_feature\"\n",
-    "      note: \"Sparse coverage\"\n",
-    "\n",
-    "    dissolved_oxygen_mgL:\n",
-    "      notation: \"9924\"\n",
-    "      role: \"feature\"\n",
-    "\n",
-    "    dissolved_oxygen_saturation:\n",
-    "      notation: \"9901\"\n",
-    "      role: \"optional_feature\"\n",
-    "\n"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python [conda env:base] *",
-   "language": "python",
-   "name": "conda-base-py"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.5"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+version: 1
+source: "EA Water Quality Archive (WQE)"
+lake_system: "Windermere"
+sampling_points:
+  - notation: "NW-88010013"
+    label: "Windermere (primary point)"
+default_date_range:
+  date_from: "2000-01-01"
+  date_to: "2026-01-01"
+
+determinands:
+  # --- Bloom proxy / biology ---
+  - name: "Chlorophyll a"
+    code: "????"          # put your EA determinand notation here (e.g., 9634/whatever you validated)
+    unit_hint: "ug/L"
+    priority: "target"
+
+  # --- Nutrients ---
+  - name: "Nitrate as N"
+    code: "????"          # nitrate determinand notation you validated
+    unit_hint: "mg/L"
+    priority: "mandatory"
+
+  - name: "Total phosphorus"
+    code: "????"
+    unit_hint: "mg/L"
+    priority: "mandatory"
+
+  # --- Oxygen ---
+  - name: "Dissolved oxygen"
+    code: "????"          # DO determinand notation you validated (often mg/L)
+    unit_hint: "mg/L"
+    priority: "mandatory"
+
+  # --- Physical / supporting (optional now, useful later) ---
+  - name: "Water temperature"
+    code: "????"
+    unit_hint: "degC"
+    priority: "recommended"
+

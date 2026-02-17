@@ -27,4 +27,15 @@ Binary classification:
 Threshold selection must be documented and justified, and the chosen threshold must be “frozen” for a model-training cycle (to avoid post-hoc tuning).
 
 
+##Target variable: chlorophyll_exceedance_20ugL
+
+Definition:
+    y = 1 if Chlorophyll-a > 20 µg/L
+    y = 0 otherwise
+
+Rationale:
+    - 20 µg/L is widely used as a heuristic boundary for eutrophic/bloom-like
+      conditions in freshwater systems.
+    - Provides ecologically interpretable classification.
+    - Avoids purely data-driven thresholding.
 

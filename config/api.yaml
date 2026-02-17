@@ -1,0 +1,8 @@
+ea_water_quality:
+  base_url: "https://environment.data.gov.uk/water-quality"
+  page_size: 250
+  timeout_s: 60
+  max_retries: 5
+  backoff_s: 2
+  user_agent: "windermere-bloom-ml/0.1"
+  accept: "text/csv"

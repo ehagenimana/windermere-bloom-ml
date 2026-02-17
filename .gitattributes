@@ -1,0 +1,14 @@
+# Normalize line endings automatically
+* text=auto
+
+# Force LF for source code
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+
+# Treat these as binary files
+*.parquet binary
+*.db binary
